@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistência H7 - Página principal</title>
+
+    <script src="/public/scripts/myScript.js"></script>
+
+    <link rel="icon" href="./public/images/tool-button.png" />
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="barra">
+        <div class="celula"><a class="mid" href="">Home</a></div>
+        <div class="celula">
+          <a class="mid" href="quem-somos.html">Quem somos</a>
+        </div>
+        <div class="celula"><a class="mid" href="contato.html">Contato</a></div>
+      </div>
+
+      <br />
+      <br />
+
+      <button type="button" onclick="dataAtual()">Exibir data e hora!</button>
+
+      <br />
+      <br />
+
+      <button type="button" onclick="mudarcor()">Mudar coloração!</button>
+
+      <br />
+
+      <div id="topo">
+        <figure>
+          <img
+            src="./public/images/tecnico.jpg"
+            width="1000px"
+            height="500px"
+            alt="Técnico instalando memória ram na placa mãe"
+          />
+          <figcaption>
+            &nbsp;&nbsp;&nbsp;&nbsp;Somos uma empresa que visa realizar manutenção
+          em todo tipo de
+          <em>hardware</em> computacional
+          </figcaption>
+        </figure>
+      </div>
+
+      <br />
+      <br />
+
+      <button type="button" onclick="ligar()">Ative nossos serviços</button>
+
+      <img
+        id="botao1"
+        src="./public/images/switch-off.png"
+        width="100px"
+        heigth="100px"
+        alt=""
+      />
+
+      <button type="button" onclick="desligar()">
+        Desative nossos serviços
+      </button>
+
+      <br />
+      <br />
+
+      <div class="texto">
+        <h1 id="meio">Reparos em hardware de computadores</h1>
+
+        <p class="centro">
+          &nbsp;&nbsp;&nbsp;&nbsp;Fazemos reparos em <em>hardware</em> de
+          computadores(<em>desktops</em>), <em>laptops</em> e dispositivos
+          móveis.
+        </p>
+
+        <hr id="inicio" />
+
+        <br />
+
+        <p class="underline">Serviços:</p>
+
+        <ul>
+          <li class="lista2">
+            Manutenção preventiva(Limpeza do <em>hardware</em>)
+          </li>
+          <li class="lista2">Manutenção corretiva</li>
+          <li class="lista2">
+            Instalação do sistema operacional(Windows e Linux)
+          </li>
+          <li class="lista2"><em>Reflow</em></li>
+          <li class="lista2"><em>Reballing</em></li>
+          <li class="lista2"><em>Replace</em></li>
+        </ul>
+
+        <br />
+
+        <p class="underline">
+          Atendemos de segunda a sábado nos seguintes horários:
+        </p>
+        <ol>
+          <li>8h às 18h - <strong>segunda a sexta</strong></li>
+          <li>8h às 16h - <strong>sábado</strong></li>
+        </ol>
+
+        <br />
+
+        <p id="fonte">
+          Trataremos seu computador com todo o cuidado possível, como se fosse
+          uma pessoa numa sala de cirurgia
+        </p>
+
+        <button type="button" onclick="tamanho()">Aumentar fonte</button>
+
+        <button type="button" onclick="$tamanho()">Diminuir fonte</button>
+
+        <br />
+        <br />
+
+        <figure>
+          <img
+            class="central"
+            src="./public/images/tecnico2.jpg"
+            width="700px"
+            heigth="500px"
+            alt=""
+          />
+          <figcaption class="central">
+            Um de nossos técnicos realizando manutenção de hardware
+          </figcaption>
+        </figure>
+
+        <br />
+
+        <figure>
+          <img
+            class="central"
+            src="./public/images/bonecos.jpg"
+            width="700px"
+            heigth="500px"
+            alt=""
+          />
+          <figcaption class="central">
+            Ilustração de manutenção de computadores em grupo
+          </figcaption>
+        </figure>
+
+        <br />
+
+        <figure>
+          <img
+            class="central"
+            src="./public/images/software.jpg"
+            width="700px"
+            heigth="500px"
+            alt=""
+          />
+          <figcaption class="central">
+            Trabalhamos com qualquer instalação de sistemas operacionais, bem
+            como sua manutenção
+          </figcaption>
+        </figure>
+
+        <br />
+
+        <form action="">
+          <h3 class="underline">Escolha um serviço:</h3>
+          <hr class="servico" />
+          <select name="opcoes" id="escolha">
+            <option value="preventiva">Manutenção preventiva</option>
+            <option value="corretiva">Manutenção corretiva</option>
+            <option value="reflow">Reflow</option>
+            <option value="rebbaling">Reballing</option>
+            <option value="replace">Replace</option>
+            <option value="instalacao">Instalação do SO</option>
+            <option value="drivers">Solução de problemas com drivers</option>
+          </select>
+        </form>
+
+        <br />
+
+        <h3>Tabela de preços:</h3>
+
+        <br />
+
+        <table class="tabela">
+          <tr>
+            <th>&nbsp;Preventiva&nbsp;</th>
+            <th>&nbsp;Corretiva&nbsp;</th>
+            <th>&nbsp;Reflow&nbsp;</th>
+            <th>&nbsp;Reballing&nbsp;</th>
+            <th>&nbsp;Replace&nbsp;</th>
+            <th>&nbsp;Instalação do SO&nbsp;</th>
+            <th>&nbsp;Solução de problemas com drivers&nbsp;</th>
+            <th>&nbsp;Orçamento&nbsp;</th>
+          </tr>
+          <tr>
+            <td id="desconto1">R$ 50</td>
+            <td id="desconto2">R$ 70</td>
+            <td id="desconto3">R$ 80</td>
+            <td id="desconto4">R$ 120</td>
+            <td id="desconto5">R$ 60</td>
+            <td id="desconto6">R$ 75</td>
+            <td id="desconto7">R$ 20 por hora</td>
+            <td id="desconto8">R$ 30</td>
+          </tr>
+        </table>
+
+        <br />
+
+        <button type="button" onclick="desconto1()">Obtenha o desconto!</button>
+
+        <br />
+        <br />
+
+        <figure>
+          <img
+            class="central"
+            src="./public/images/hardware.jpg"
+            width="700px"
+            heigth="500px"
+            alt=""
+          />
+          <figcaption class="central">
+            Um de nossos técnicos realizando manutenção de computadores
+          </figcaption>
+        </figure>
+
+        <br />
+
+        <figure>
+          <img
+            class="central"
+            src="./public/images/hardware2.jpg"
+            width="700px"
+            heigth="500px"
+            alt=""
+          />
+          <figcaption class="central">
+            Ilustração de manutenção de computadores
+          </figcaption>
+        </figure>
+
+        <br />
+
+        <details title="Clique e veja os serviços extras">
+          <summary>Serviços extras:</summary>
+          <br />
+          <form action="">
+            <h3 class="underline">Escolha um serviço extra:</h3>
+            <hr class="servico" />
+            <select name="opcoes" id="escolha2">
+              <option value="servidores">Instalação de servidores</option>
+              <option value="configuração">Configuração de servidores</option>
+              <option value="administração">Administração de servidores</option>
+              <option value="AD">Instalação do Active Directory</option>
+              <option value="DHCP">Intalação do DHCP</option>
+              <option value="DNS">Instalação do DNS</option>
+              <option value="FileServer">Instalação do File Server</option>
+              <option value="rede">Configurações de rede</option>
+            </select>
+          </form>
+          <br />
+          <table class="tabela">
+            <tr>
+              <th>Instalação de servidores</th>
+              <th>Configuração de servidores</th>
+              <th>Administração de servidores</th>
+              <th>Instalação do Active Directory</th>
+              <th>Instalação do DHCP</th>
+              <th>Instalação do DNS</th>
+              <th>Instalação do File Server</th>
+              <th>Configurações de rede</th>
+            </tr>
+            <tr>
+              <td id="desconto9">R$ 120</td>
+              <td id="desconto10">R$ 50</td>
+              <td id="desconto11">R$ 50 por hora</td>
+              <td id="desconto12">R$ 130</td>
+              <td id="desconto13">R$ 145</td>
+              <td id="desconto14">R$ 150</td>
+              <td id="desconto15">R$ 110</td>
+              <td id="desconto16">R$ 20 por hora</td>
+            </tr>
+          </table>
+        </details>
+
+        <br />
+
+        <button type="button" onclick="desconto2()">Obtenha o desconto!</button>
+
+        <br />
+        <br />
+
+        <figure>
+          <img
+            class="central"
+            src="./public/images/network.jpg"
+            width="700px"
+            heigth="500px"
+            alt=""
+          />
+          <figcaption class="central">
+            Ilustração de manutenção de rede
+          </figcaption>
+        </figure>
+
+        <article>
+          <h4 class="secao">Avaliações dos nossos clientes:</h4>
+          <br/>
+          <article class="comentario">
+            <img src="./public/images/mulher.jpg" width="90px" heigth="90px" class="circulo" alt="">&nbsp;&nbsp;<span class="underline">Gabriela Lima</span>
+            <br />
+            <p>Adorei o atendimento, voltarei sempre.</p>
+          </article>
+          <br />
+          <article class="comentario">
+            <img src="./public/images/homem.jpg" width="90px" heigth="90px" class="circulo" alt="">&nbsp&nbsp;<span class="underline">Gabriel Santana</span>
+            <br />
+            <p>Simplesmente incrível, melhor empresa de TI que eu poderia ter conhecido</p>
+          </article>
+          <br />
+          <article class="comentario">
+            <img src="./public/images/mulher2.jpg" width="90px" heigth="90px" class="circulo" alt="">&nbsp&nbsp;<span class="underline">Mariana Torres</span>
+            <br />
+            <p>Serviços de alta qualidade, os técnicos são realmente capacitados.</p>
+          </article>
+          <br />
+          <article class="comentario">
+            <img src="./public/images/homem2.jpg" width="90px" heigth="90px" class="circulo" alt="">&nbsp&nbsp;<span class="underline">Lucas Silva</span>
+            <br />
+            <p>Curti bastante a agilidade dos serviços, eles trabalham como máquinas, incrível.</p>
+          </article>
+        </article>
+      </article>
+      <br />
+      <form>
+        <textarea name="" class="formulario" id="" cols="100" rows="5" placeholder=" Deixe um comentário sobre a assistência H7"></textarea>
+        <br />
+        <input class="envio" type="submit" value="Postar" />
+      </form>
+        <footer class="direita">
+          <small>
+            1998 - 2020 &copy; Assistência H7
+            <span class="corum">Todos os direitos reservados.</span>
+          </small>
+        </footer>
+
+        <button type="button" onclick="$noturno()">Modo noturno!</button>
+      </div>
+    </div>
+  </body>
+</html>
